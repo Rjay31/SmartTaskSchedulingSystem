@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.calendar {
+  margin-top: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  min-height: 100px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.day-header {
+  font-weight: bold;
+}
+
+.task {
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.high { background: #ffcccc; }
+.medium { background: #ffe0b3; }
+.low { background: #ccffcc; }
